@@ -1,12 +1,12 @@
-import Heading from "../ui/Heading";
-import Row from "../ui/Row";
-import UpdateUserDataForm from "../features/authentication/UpdateUserDataForm";
-import UpdatePasswordForm from "../features/authentication/UpdatePasswordForm";
+// import Heading from "../ui/Heading";
+// import Row from "../ui/Row";
+// import UpdateUserDataForm from "../features/authentication/UpdateUserDataForm";
+// import UpdatePasswordForm from "../features/authentication/UpdatePasswordForm";
 
 function Account() {
   return (
     <>
-      <Heading as="h1">Update your account</Heading>
+      {/* <Heading as="h1">Update your account</Heading>
 
       <Row>
         <Heading as="h3">Update user data</Heading>
@@ -16,7 +16,9 @@ function Account() {
       <Row>
         <Heading as="h3">Update password</Heading>
         <UpdatePasswordForm />
-      </Row>
+      </Row> */}
+
+      <h1>account</h1>
     </>
   );
 }

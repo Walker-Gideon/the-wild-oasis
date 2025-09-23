@@ -12,6 +12,7 @@ function Dashboard() {
       </Row>
 
       <DashboardLayout /> */}
+      <h1>Dashboard</h1>
     </>
   );
 }
