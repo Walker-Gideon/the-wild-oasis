@@ -1,17 +1,12 @@
-import GlobalStyles from "./styles/GlobalStyles";
-import Button from "./ui/Button";
-import Input from "./ui/input";
-import Heading from "./ui/Heading";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
 
 export default function App() {
   return (
-    <>
-      <GlobalStyles />
-      <div>
-        <Heading as="h1">The Wild Oasis</Heading>
-        <Button>New</Button>
-        <Input placeholder="type here.." />
-      </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="dashboard" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
