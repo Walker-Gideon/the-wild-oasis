@@ -1,12 +1,13 @@
-// import Heading from "../ui/Heading";
 // import SignupForm from "../../../Wild_Oasis-main/using/features/authentication/SignupForm";
+
+import Heading from "../ui/Heading";
 
 function NewUsers() {
   return (
     <>
-      {/* <Heading as="h1">Create a new user</Heading>
+      <Heading as="h1">Create a new user</Heading>
+      {/* 
       <SignupForm /> */}
-      <h1>Users</h1>
     </>
   );
 }
