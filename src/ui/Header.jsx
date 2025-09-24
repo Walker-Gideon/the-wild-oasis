@@ -1,8 +1,7 @@
-/*
 import styled from "styled-components";
 // import Logout from "../features/authentication/Logout";
-import HeaderMenu from "./HeaderMenu";
-import UserAvatar from "../features/authentication/UserAvatar";
+// import HeaderMenu from "./HeaderMenu";
+// import UserAvatar from "../features/authentication/UserAvatar";
 
 const StyledHeader = styled.header`
   background-color: var(--color-grey-0);
@@ -14,15 +13,13 @@ const StyledHeader = styled.header`
   align-items: center;
   justify-content: flex-end;
 `;
-*/
+
 export default function Header() {
   return (
-    <>
-      {/* <StyledHeader>
-        <UserAvatar />
-        <HeaderMenu />
-      </StyledHeader> */}
+    <StyledHeader>
+      {/* <UserAvatar />
+        <HeaderMenu /> */}
       <p>Header</p>
-    </>
+    </StyledHeader>
   );
 }
