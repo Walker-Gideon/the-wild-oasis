@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-// import Header from "./Header";
-// import Sidebar from "./Sidebar";
+import Header from "./Header";
+import Sidebar from "./Sidebar";
 // import styled from "styled-components";
 
 /*
@@ -29,16 +29,17 @@ export default function AppLayout() {
   return (
     <div>
       {/* <StyledAppLayout>
-        <Header />
-        <Sidebar />
         <Main>
-          <Container>
-          </Container>
-          </Main>
-          </StyledAppLayout> */}
+        <Container>
+        </Container>
+        </Main>
+        </StyledAppLayout> */}
 
-      <h1>App Layout</h1>
-      <Outlet />
+      <Header />
+      <Sidebar />
+      <main>
+        <Outlet />
+      </main>
     </div>
   );
 }

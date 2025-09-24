@@ -1,3 +1,4 @@
+/*
 import styled from "styled-components";
 import Logo from "./Logo";
 import MainNav from "./MainNav";
@@ -13,13 +14,17 @@ const StyledSidebar = styled.aside`
   flex-direction: column;
   gap: 3.2rem;
 `;
+*/
 
 export default function Sidebar() {
   return (
-    <StyledSidebar>
-      <Logo />
-      <MainNav />
-      <Uploader />
-    </StyledSidebar>
+    <>
+      {/* <StyledSidebar>
+        <Logo />
+        <MainNav />
+        <Uploader />
+      </StyledSidebar> */}
+      <p>SideBar</p>
+    </>
   );
 }
