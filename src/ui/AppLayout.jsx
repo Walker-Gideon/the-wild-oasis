@@ -1,8 +1,9 @@
 import { Outlet } from "react-router-dom";
-import Header from "./Header";
-import Sidebar from "./Sidebar";
-import styled from "styled-components";
+// import Header from "./Header";
+// import Sidebar from "./Sidebar";
+// import styled from "styled-components";
 
+/*
 const StyledAppLayout = styled.div`
   display: grid;
   grid-template-columns: 26rem 1fr;
@@ -22,16 +23,22 @@ const Container = styled.div`
   flex-direction: column;
   gap: 3.2rem;
 `;
+*/
+
 export default function AppLayout() {
   return (
-    <StyledAppLayout>
-      <Header />
-      <Sidebar />
-      <Main>
-        <Container>
-          <Outlet />
-        </Container>
-      </Main>
-    </StyledAppLayout>
+    <div>
+      {/* <StyledAppLayout>
+        <Header />
+        <Sidebar />
+        <Main>
+          <Container>
+          </Container>
+          </Main>
+          </StyledAppLayout> */}
+
+      <h1>App Layout</h1>
+      <Outlet />
+    </div>
   );
 }
