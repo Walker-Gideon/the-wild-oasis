@@ -16,8 +16,7 @@ function Logo() {
   // const src = isDarkMode ? "/logo-dark.png" : "/logo-light.png";
   return (
     <StyledLogo>
-      {/* <Img src={src} alt="Logo" /> */}
-      <Img alt="Logo" />
+      <Img src="/logo-light.png" alt="Logo" />
     </StyledLogo>
   );
 }
