@@ -4,3 +4,9 @@ npm i @tanstack/react-query
 
 with the version  
 npm i @tanstack/react-query@(version number)
+
+Next you set it up in the app.js file
+Check the dock
+
+but we can install the dev too as
+npm i @tanstack/react-query-devtools
