@@ -1,11 +1,15 @@
-import Heading from "../../ui/Heading";
-import Row from "../../ui/Row";
+import Heading from "/src/ui/Heading";
+import Row from "/src/ui/Row";
+import CabinTable from "./CabinTable";
 
 function Cabins() {
   return (
     <>
       <Row type="horizontal">
         <Heading as="h1">All cabins</Heading>
+      </Row>
+      <Row>
+        <CabinTable />
       </Row>
     </>
   );
