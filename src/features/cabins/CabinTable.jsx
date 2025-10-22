@@ -50,6 +50,7 @@ export default function CabinTable() {
         <div>Discount</div>
         <div></div>
       </TableHeader>
+      {/* {cabin.map(cabin =>)} */}
     </Table>
   );
 }
