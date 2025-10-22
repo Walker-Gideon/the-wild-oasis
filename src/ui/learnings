@@ -10,3 +10,6 @@ Check the dock
 
 but we can install the dev too as
 npm i @tanstack/react-query-devtools
+
+after installation, we do this in the app.js file
+<ReactQueryDevtools initialIsOpen={false} />
