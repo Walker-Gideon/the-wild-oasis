@@ -1,0 +1,6 @@
+/**\*** React Query
+you install React query as
+npm i @tanstack/react-query
+
+with the version  
+npm i @tanstack/react-query@(version number)
