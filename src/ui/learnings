@@ -10,3 +10,6 @@ fetching the data from the api })
 
 <!-- useMtation -->
 It is used inorder to delete data useMutation({});
+
+<!-- For toast -->
+use react-hot-toast
