@@ -1,21 +1,12 @@
-/**\*** React Query
-you install React query as
-npm i @tanstack/react-query
+/**\*** React Query you install React query as npm i @tanstack/react-query with
+the version npm i @tanstack/react-query@(version number) Next you set it up in
+the app.js file Check the dock but we can install the dev too as npm i
+@tanstack/react-query-devtools after installation, we do this in the app.js file
+<ReactQueryDevtools initialIsOpen="{false}" />
 
-with the version  
-npm i @tanstack/react-query@(version number)
+<!-- useQuery -->
+hook useQuery({ queryKey: [] // which take in key as an id, queryFn: for
+fetching the data from the api })
 
-Next you set it up in the app.js file
-Check the dock
-
-but we can install the dev too as
-npm i @tanstack/react-query-devtools
-
-after installation, we do this in the app.js file
-<ReactQueryDevtools initialIsOpen={false} />
-
-hook
-useQuery({
-queryKey: [] // which take in key as an id,
-queryFn: for fetching the data from the api
-})
+<!-- useMtation -->
+It is used inorder to delete data useMutation({});
