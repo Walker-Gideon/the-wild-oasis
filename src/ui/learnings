@@ -12,4 +12,21 @@ fetching the data from the api })
 It is used inorder to delete data useMutation({});
 
 <!-- For toast -->
-use react-hot-toast
+use react-hot-toast npm i react-hot-toast Check the docs for everything you need
+<Toaster position="top-center" gutter={12} reverseOrder={false}
+containerStyle={{ margin: "8px" }} toastOptions={{
+          success: {
+            duration: 3000,
+          },
+          error: {
+            duration: 5000,
+          },
+          style: {
+            fontSize: "16px",
+            maxWidth: "500px",
+            padding: "16px 24px",
+            background: "var(--color-grey-0)",
+            color: "var(--color-grey-700)",
+          },
+}}
+/>
