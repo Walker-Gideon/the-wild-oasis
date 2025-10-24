@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { deleteCabin } from "/src/services/apiCabins";
 import { formatCurrency } from "/src/utils/helpers";
 import styled from "styled-components";
+import toast from "react-hot-toast";
 
 const TableRow = styled.div`
   display: grid;
@@ -59,12 +60,12 @@ export default function CabinRow({ cabin }) {
   const { isLoading: isDeleting, mutate } = useMutation({
     mutationFn: (id) => deleteCabin(id),
     onSuccess: () => {
-      alert("Cabin successiful deleted");
+      toast.success("Cabin successiful deleted");
       queryClient.invalidateQueries({
         queryKey: ["cabins"],
       });
     },
-    onError: (err) => alert(err.message),
+    onError: (err) => toast.error(err.message),
   });
 
   return (
