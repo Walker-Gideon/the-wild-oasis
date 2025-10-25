@@ -10,7 +10,9 @@ import Form from "/src/ui/Form";
 export default function CreateCabinForm() {
   const { register, handleSubmit } = useForm();
 
-  function onSubmit() {}
+  function onSubmit(data) {
+    console.log(data);
+  }
 
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>
@@ -52,7 +54,7 @@ export default function CreateCabinForm() {
         <Button variation="secondary" type="reset">
           Cancel
         </Button>
-        <Button>Create cabin</Button>
+        <Button>Add cabin</Button>
       </FormRow>
     </Form>
   );
