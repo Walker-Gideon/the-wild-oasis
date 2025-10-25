@@ -1,6 +1,6 @@
+import CabinTable from "./components/CabinTable";
 import Heading from "/src/ui/Heading";
 import Row from "/src/ui/Row";
-import CabinTable from "./CabinTable";
 
 function Cabins() {
   return (

@@ -1,10 +1,10 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
+import styled from "styled-components";
 import PropTypes from "prop-types";
+import toast from "react-hot-toast";
 
 import { deleteCabin } from "/src/services/apiCabins";
 import { formatCurrency } from "/src/utils/helpers";
-import styled from "styled-components";
-import toast from "react-hot-toast";
 
 const TableRow = styled.div`
   display: grid;
