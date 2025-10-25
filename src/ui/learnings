@@ -30,3 +30,6 @@ containerStyle={{ margin: "8px" }} toastOptions={{
           },
 }}
 />
+
+<!-- react form -->
+ npm i react-hook-form
