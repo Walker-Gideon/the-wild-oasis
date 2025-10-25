@@ -1,9 +1,9 @@
+import FileInput from "/src/ui/FileInput";
+import Textarea from "/src/ui/Textarea";
 import FormRow from "/src/ui/FormRow";
+import Button from "/src/ui/Button";
 import Input from "/src/ui/input";
 import Form from "/src/ui/Form";
-import Textarea from "../../ui/Textarea";
-import FileInput from "../../ui/FileInput";
-import Button from "../../ui/Button";
 
 export default function CreateCabinForm() {
   return (
