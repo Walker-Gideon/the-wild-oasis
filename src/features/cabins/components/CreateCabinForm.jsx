@@ -1,3 +1,5 @@
+import { useForm } from "react-hook-form";
+
 import FileInput from "/src/ui/FileInput";
 import Textarea from "/src/ui/Textarea";
 import FormRow from "/src/ui/FormRow";
@@ -6,30 +8,44 @@ import Input from "/src/ui/input";
 import Form from "/src/ui/Form";
 
 export default function CreateCabinForm() {
+  const { register, handleSubmit } = useForm();
+
+  function onSubmit() {}
+
   return (
-    <Form>
+    <Form onSubmit={handleSubmit(onSubmit)}>
       <FormRow label="Cabin name">
-        <Input type="text" id="name" />
+        <Input type="text" id="name" {...register("name")} />
       </FormRow>
 
       <FormRow label="Maximum Capacity">
-        <Input type="number" id="maxCapacity" />
+        <Input type="number" id="maxCapacity" {...register("maxCapacity")} />
       </FormRow>
 
       <FormRow label="Regular Price">
-        <Input type="number" id="regularPrice" />
+        <Input type="number" id="regularPrice" {...register("regularPrice")} />
       </FormRow>
 
       <FormRow label="Discount">
-        <Input type="number" id="discount" />
+        <Input
+          type="number"
+          id="discount"
+          defaultValue={0}
+          {...register("discount")}
+        />
       </FormRow>
 
       <FormRow label="Description">
-        <Textarea type="number" id="description" />
+        <Textarea
+          type="number"
+          id="description"
+          defaultValue=""
+          {...register("description")}
+        />
       </FormRow>
 
       <FormRow label="Cabin Photo">
-        <FileInput id="image" type="file" />
+        <FileInput id="image" type="file" accept="image/*" />
       </FormRow>
 
       <FormRow>
